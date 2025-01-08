@@ -12,43 +12,43 @@ const List<Product> allProducts = [
     id: '2',
     title: 'Karati Kit',
     price: 34,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/karati.png',
   ),
   Product(
     id: '3',
-    title: 'Denim Jeans', 
+    title: 'Denim Jeans',
     price: 54,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/jeans.png',
   ),
   Product(
     id: '4',
     title: 'Red Backpack',
     price: 13,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/backpack.png',
   ),
   Product(
     id: '5',
     title: 'Drum and Sticks',
     price: 29,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/drum.png',
   ),
   Product(
     id: '6',
     title: 'Blue suitcase',
     price: 54,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/suitcase.png',
   ),
   Product(
     id: '7',
     title: 'Roller Skates',
     price: 72,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/skates.png',
   ),
   Product(
     id: '8',
     title: 'Electric Guitar',
     price: 19,
-    image: 'assets/products/shorts.png',
+    image: 'assets/products/guitar.png',
   ),
 ];
 
@@ -59,4 +59,3 @@ final productsProvider = Provider((ref) {
 final reducedProvider = Provider((ref) {
   return allProducts.where((p) => p.price < 50).toList();
 });
-
